@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif; /* set a default font */
+    padding: 20px; /* add some padding to the body */
+    background-color:black;
+  }
+  
+  h1, h2 {
+    text-align: center; /* center the headings */
+    margin-bottom: 20px; /* add a margin at the bottom of the headings */
+    color: white;
+  }
+  
+  ul {
+    list-style: none; /* remove the bullet points from the list */
+    display: flex; /* set the list to be a flex container */
+    flex-wrap: wrap; /* allow the items to wrap to the next line */
+    justify-content: center; /* center the items within the container */
+  }
+  
+  li {
+    flex-basis: 20%; /* set initial width of items */
+    padding: 20px; /* add padding to items */
+    margin: 10px; /* add margin to items */
+    border: 1px solid #ddd; /* add border to items */
+    text-align: center; /* center text within items */
+    background-color: #f9f9f9; /* add background color to items */
+    position: relative; /* set position for the flip effect */
+    perspective: 1000px; /* set perspective for the flip effect */
+    height: 100px;
+  }
+  
+  .flip {
+    height: 450px;
+  }
+  
+  .song-list {
+    display: none; /* hide the song list by default */
+    position: absolute; /* position the song list */
+    top: 0; /* set top position */
+    left: 0; /* set left position */
+    width: 300px; /* set width */
+    height: 10px; /* set height */
+    transform: rotateY(180deg); /* rotate the song list by 180 degrees */
+    background-color: #ddd; /* set background color */
+    padding: 20px; /* add padding */
+  }
+  
+  .flip:hover .song-list, .flip.hover .song-list {
+    display: block; /* display the song list on hover */
+  }
+  
+  .flip:hover li, .flip.hover li {
+    transform: rotateY(180deg); /* rotate the item by 180 degrees on hover */
+  }
+
+#trip, #xxx, #lp, #trav, #boogie {
+    background-color: rgb(181, 67, 243);
+}
+
+
+  
+  
+  
+  
+  
