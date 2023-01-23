@@ -1,3 +1,7 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+
+<img id="right-image" src="https://media.tenor.com/G7VxP0dvvZQAAAAC/sasuke-angry.gif" alt="young sasuke gif"></img>
+
+const gif = document.querySelector("#right-image");
+gif.addEventListener("click", function() {
+    window.location.href = "https://www.youtube.com/watch?v=pb-6C9D05AM&ab_channel=Zekkson";
+});
