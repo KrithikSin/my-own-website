@@ -47,6 +47,7 @@ body {
   
   .flip:hover .song-list, .flip.hover .song-list {
     display: block; /* display the song list on hover */
+
   }
   
   .flip:hover li, .flip.hover li {
